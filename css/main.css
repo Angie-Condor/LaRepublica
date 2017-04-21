@@ -7,7 +7,8 @@
 
 body{
   background-color: rgb(217, 224, 224);
-  font-family: 'Roboto', sans-serif;s
+  font-family: 'Roboto', sans-serif;
+  font-style: bold 700;
 }
 
 a{
@@ -16,6 +17,7 @@ a{
 
 .nav-header{
   position: fixed;
+  z-index: 1000000;
   width: 100%;
   height: 80px;
   display: block;
@@ -39,12 +41,12 @@ a{
 
 .content-icons{
   display: inline-block;
-  /*position:relative;*/
+  position:relative;
   width: 200px;
   height: 65px;
-  /*top: -10px;
-  left: 400px;*/
-  margin-left: 240px;
+  top: -10px;
+  left: 300px;
+  /*margin-left: 240px;*/
 }
 
 .content-icons span{
@@ -53,11 +55,14 @@ a{
 
 .content-buscar{
   display: inline-block;
-  width: 70px;
+  position: relative;
+  width: 73px;
   height: auto;
-  margin-left: 180px;
+  margin-left: 100px;
   border: solid 2px white;
   border-radius: 10px;
+  top: -15px;
+  left: 430px;
 }
 
 .content-buscar span{
@@ -83,7 +88,7 @@ a{
 
 .menu ul{
   background-color: #4D4D59;
-  width: 860px;
+  width: 940px;
   height: 30px;
   margin-left: 180px;
 }
@@ -99,4 +104,30 @@ li{
   display: inline-block;
   padding: 5px;
   list-style: none;
+}
+
+.box-noticias{
+  display: block;
+  position: relative;
+  background-color: white;
+  box-shadow: 5px gray;
+  margin-left: 180px;
+  width: 69.5%;
+  height: 800px;
+  top: 110px;
+}
+
+.noti-izq{
+  float:left;
+  width: 70%;
+  height:auto;
+}
+
+.noti-img{
+  background-color: #333340;
+}
+
+.noti-img span{
+  color: white;
+  width: 40px;
 }
